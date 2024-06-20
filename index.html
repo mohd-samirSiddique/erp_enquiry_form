@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    input {
+        margin-top: 6px;
+    }
+
+
+    .main {
+        padding: 0px 20px 0px 20px;
+
+    }
+</style>
+
+<body>
+    <div class="card-header bg-light p-3 w-100">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Add Enquiry
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal modal-xl fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Enquiry Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="container-fluid">
+                            <div class="main">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <label for="">Choose Branch</label>
+                                        <select id="Branch" class="form-select" placeholder="choose">
+                                            <option value="mebati">Choose...</option>
+                                            <option value="deeg gate">deeg gate</option>
+                                            <option value="bharatpur gate">bharatpur gate</option>
+                                            <option value="holi gate">holi gate</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Choose Status</label>
+                                        <select id="Status" class="form-select" placeholder="Interested">
+                                            <option value="deeg gate">Interested</option>
+                                            <option value="mebati">2</option>
+                                            <option value="bharatpur gate">3</option>
+                                            <option value="holi gate">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Choose Source</label>
+                                        <select id="Source" class="form-select">
+                                            <option value="deeg gate">Field Marketing</option>
+                                            <option value="mebati">dkf</option>
+                                            <option value="bharatpur gate">df</option>
+                                            <option value="holi gate">dfd</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Choose Assign To</label>
+                                        <select id="Assign" class="form-select">
+                                            <option value="deeg gate">Anyone</option>
+                                            <option value="mebati">df</option>
+                                            <option value="bharatpur gate">df</option>
+                                            <option value="holi gate">dg</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-lg-3">
+                                        <label for="">Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Name" name="name">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Father's Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Father's Name"
+                                            name="name">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Mobile 1</label>
+                                        <input type="number" class="form-control" placeholder="Enter Mobile No.1"
+                                            name="name">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">mobile 2</label>
+                                        <input type="text" class="form-control" placeholder="Enter Mobile No.2"
+                                            name="name">
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-lg-3">
+                                        <label for="">Pincode</label>
+                                        <input type="Pincode" class="form-control" placeholder="Enter Pincode"
+                                            name="Pincode">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">City</label>
+                                        <input type="City" class="form-control" placeholder="Your City" name="City">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">State</label>
+                                        <input type="number" class="form-control" placeholder="Your State" name="State">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Country</label>
+                                        <input type="text" class="form-control" placeholder="Your Country"
+                                            name="Country">
+                                    </div>
+                                </div>
+
+                                <div class="row pt-3">
+                                    <div class="col-lg-3">
+                                        <label for="">Email</label>
+                                        <input type="Email" class="form-control" placeholder="Enter Email" name="Email">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Date</label>
+                                        <input type="Date" class="form-control" placeholder="mm/dd/yyyy" name="Date">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">Address</label>
+                                        <input type="Address" class="form-control" placeholder="Address" name="Address">
+                                    </div>
+                                </div>
+
+                                <div class="row pt-3">
+                                    <div class="col-lg-3">
+                                        <label for="">Degree/Diploma</label>
+                                        <input type="text" class="form-control" name="Degree/Diploma">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">College/Institute</label>
+                                        <input type="text" class="form-control" name="College/Institute">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">University</label>
+                                        <input type="text" class="form-control" name="University">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Year Of Passing</label>
+                                        <input type="number" class="form-control" name="Year Of Passing">
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-lg-3">
+                                        <label for="">Company</label>
+                                        <input type="text" class="form-control" placeholder="Enter Company"
+                                            name="Company">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Job Profile</label>
+                                        <input type="text" class="form-control" placeholder="Enter Job Profile"
+                                            name="Job Profile">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Attended By</label>
+                                        <input type="text" class="form-control" name="Attended">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="">Lead Value</label>
+                                        <input type="number" class="form-control" placeholder="Lead Value"
+                                            name="Lead Value">
+                                    </div>
+                                </div>
+
+                                <div class="row pt-3">
+                                    <div class="col-lg-3">
+                                        <label for="">Lead Category</label>
+                                        <select id="Lead Category" class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="1">2</option>
+                                            <option value="1">3</option>
+                                            <option value="1">4</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <label for="">Product</label>
+                                        <select class="form-select">
+                                            <option value="1">Choose...</option>
+                                            <option value="1">df</option>
+                                            <option value="1">yhty</option>
+                                            <option value="1">rt</option>
+                                        </select>
+                                    </div>
+                                    <div class="text-center pt-3">
+                                        <button class="btn bg-primary text-light" type="submit"> submit</button>
+                                        <button class="btn bg-secondary text-light">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end of add equiry  -->
+
+    <!-- starting point of table  -->
+
+    <table class="table table-hover mt-4">
+        <thead>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Lead Type</th>
+            <th>Assign To</th>
+            <th>Last Response</th>
+            <th>Call Status</th>
+            <th>Lead Status</th>
+            <th>Next Follow Up Date</th>
+            <th>Crated At</th>
+            <th>Action</th>
+        </thead>
+        <tr>
+            <td>samir</td>
+            <td>9877867345</td>
+            <td>Lead</td>
+            <td>experts</td>
+            <td>Intersted</td>
+            <td>Answered</td>
+            <td>Good</td>
+            <td>09-05-24 12:23pm</td>
+            <td>09-05-24 12:23pm</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>shersing</td>
+            <td>9877232345</td>
+            <td>Lead</td>
+            <td>experts</td>
+            <td>Intersted</td>
+            <td>Answered</td>
+            <td>Good</td>
+            <td>09-05-24 12:23pm</td>
+            <td>09-05-24 12:23pm</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>samir</td>
+            <td>9877867345</td>
+            <td>Lead</td>
+            <td>experts</td>
+            <td>Intersted</td>
+            <td>Answered</td>
+            <td>Good</td>
+            <td>09-05-24 12:23pm</td>
+            <td>09-05-24 12:23pm</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>samir</td>
+            <td>9877867345</td>
+            <td>Lead</td>
+            <td>experts</td>
+            <td>Intersted</td>
+            <td>Answered</td>
+            <td>Good</td>
+            <td>09-05-24 12:23pm</td>
+            <td>09-05-24 12:23pm</td>
+            <td></td>
+        </tr>
+      </table>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
